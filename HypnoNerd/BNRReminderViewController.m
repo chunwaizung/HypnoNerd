@@ -35,10 +35,32 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+    // Always call the super implementation of viewDidLoad
+    [super viewDidLoad];
+    
+    NSLog(@"BNRReminderViewController loaded its view.");
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    // Ensure that users can't pick a date in the past.
+    self.datePicker.minimumDate = [NSDate dateWithTimeIntervalSinceNow:60];
+}
+
 - (IBAction)addReminder:(id)sender
 {
     NSDate *date = self.datePicker.date;
     NSLog(@"Setting a reminder for %@.", date);
+    
+    // Schedule a reminder (local notification)
+    UILocalNotification *note = [[UILocalNotification alloc] init];
+    note.alertBody = @"Hypnotize me!";
+    note.fireDate = date;
+    [[UIApplication sharedApplication] scheduleLocalNotification:note];
 }
 
 @end
