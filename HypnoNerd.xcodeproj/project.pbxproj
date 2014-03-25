@@ -19,6 +19,8 @@
 		3A422CA718E1337E00828235 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A422C8F18E1337E00828235 /* UIKit.framework */; };
 		3A422CAF18E1337E00828235 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A422CAD18E1337E00828235 /* InfoPlist.strings */; };
 		3A422CB118E1337E00828235 /* HypnoNerdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CB018E1337E00828235 /* HypnoNerdTests.m */; };
+		3A422CBF18E1340B00828235 /* BNRHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CBE18E1340B00828235 /* BNRHypnosisView.m */; };
+		3A422CC218E1345000828235 /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CC118E1345000828235 /* BNRHypnosisViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		3A422CAC18E1337E00828235 /* HypnoNerdTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HypnoNerdTests-Info.plist"; sourceTree = "<group>"; };
 		3A422CAE18E1337E00828235 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A422CB018E1337E00828235 /* HypnoNerdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HypnoNerdTests.m; sourceTree = "<group>"; };
+		3A422CBD18E1340B00828235 /* BNRHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRHypnosisView.h; sourceTree = "<group>"; };
+		3A422CBE18E1340B00828235 /* BNRHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRHypnosisView.m; sourceTree = "<group>"; };
+		3A422CC018E1345000828235 /* BNRHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BNRHypnosisViewController.h; path = ../BNRHypnosisViewController.h; sourceTree = "<group>"; };
+		3A422CC118E1345000828235 /* BNRHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BNRHypnosisViewController.m; path = ../BNRHypnosisViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,10 @@
 		3A422C9118E1337E00828235 /* HypnoNerd */ = {
 			isa = PBXGroup;
 			children = (
+				3A422CC018E1345000828235 /* BNRHypnosisViewController.h */,
+				3A422CC118E1345000828235 /* BNRHypnosisViewController.m */,
+				3A422CBD18E1340B00828235 /* BNRHypnosisView.h */,
+				3A422CBE18E1340B00828235 /* BNRHypnosisView.m */,
 				3A422C9A18E1337E00828235 /* BNRAppDelegate.h */,
 				3A422C9B18E1337E00828235 /* BNRAppDelegate.m */,
 				3A422C9D18E1337E00828235 /* Images.xcassets */,
@@ -240,8 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A422CC218E1345000828235 /* BNRHypnosisViewController.m in Sources */,
 				3A422C9818E1337E00828235 /* main.m in Sources */,
 				3A422C9C18E1337E00828235 /* BNRAppDelegate.m in Sources */,
+				3A422CBF18E1340B00828235 /* BNRHypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
