@@ -21,13 +21,8 @@
     // Get a Hypnosis view controller
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
     
-    
-    // Get a pointer to an object that represents a pp bundle
-    NSBundle *appBundle = [NSBundle mainBundle];
-    
     // Look in the bundle for the BNRReminderViewController.xib file
-    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController"
-                                                                                 bundle:appBundle];
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
     
     // Create a tab bar view controller and add the hypnosis and reminder VCs
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
