@@ -29,8 +29,12 @@
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController"
                                                                                  bundle:appBundle];
     
-    // Set the root view controller to the reminder view controller
-    self.window.rootViewController = rvc;
+    // Create a tab bar view controller and add the hypnosis and reminder VCs
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[hvc, rvc];
+    
+    // Set the root view controller to the tab bar view controller
+    self.window.rootViewController = tabBarController;
     
     // End override pointo for customization after application launch.
     
