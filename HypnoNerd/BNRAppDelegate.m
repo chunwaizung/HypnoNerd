@@ -9,6 +9,7 @@
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisViewController.h"
 #import "BNRReminderViewController.h"
+#import "BNRQuizViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -18,15 +19,14 @@
     
     // Begin override point for customization after application launch.
     
-    // Get a Hypnosis view controller
+    // Get a Hypnosis, Reminder and Quiz view controllers
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
-    
-    // Look in the bundle for the BNRReminderViewController.xib file
     BNRReminderViewController *rvc = [[BNRReminderViewController alloc] init];
+    BNRQuizViewController *qvc = [[BNRQuizViewController alloc] init];
     
     // Create a tab bar view controller and add the hypnosis and reminder VCs
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
-    tabBarController.viewControllers = @[hvc, rvc];
+    tabBarController.viewControllers = @[hvc, rvc, qvc];
     
     // Set the root view controller to the tab bar view controller
     self.window.rootViewController = tabBarController;

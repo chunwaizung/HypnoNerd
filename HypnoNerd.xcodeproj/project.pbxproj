@@ -23,6 +23,8 @@
 		3A422CC218E1345000828235 /* BNRHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CC118E1345000828235 /* BNRHypnosisViewController.m */; };
 		3A422CC518E136DA00828235 /* BNRReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CC418E136DA00828235 /* BNRReminderViewController.m */; };
 		3A422CC718E137FD00828235 /* BNRReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A422CC618E137FD00828235 /* BNRReminderViewController.xib */; };
+		3A422CCA18E144BA00828235 /* BNRQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A422CC918E144BA00828235 /* BNRQuizViewController.m */; };
+		3A422CCC18E1451500828235 /* BNRQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A422CCB18E1451500828235 /* BNRQuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		3A422CC318E136DA00828235 /* BNRReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRReminderViewController.h; sourceTree = "<group>"; };
 		3A422CC418E136DA00828235 /* BNRReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRReminderViewController.m; sourceTree = "<group>"; };
 		3A422CC618E137FD00828235 /* BNRReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRReminderViewController.xib; sourceTree = "<group>"; };
+		3A422CC818E144BA00828235 /* BNRQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRQuizViewController.h; sourceTree = "<group>"; };
+		3A422CC918E144BA00828235 /* BNRQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRQuizViewController.m; sourceTree = "<group>"; };
+		3A422CCB18E1451500828235 /* BNRQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRQuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +132,9 @@
 				3A422CC318E136DA00828235 /* BNRReminderViewController.h */,
 				3A422CC418E136DA00828235 /* BNRReminderViewController.m */,
 				3A422CC618E137FD00828235 /* BNRReminderViewController.xib */,
+				3A422CC818E144BA00828235 /* BNRQuizViewController.h */,
+				3A422CC918E144BA00828235 /* BNRQuizViewController.m */,
+				3A422CCB18E1451500828235 /* BNRQuizViewController.xib */,
 				3A422C9D18E1337E00828235 /* Images.xcassets */,
 				3A422C9218E1337E00828235 /* Supporting Files */,
 			);
@@ -238,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A422CCC18E1451500828235 /* BNRQuizViewController.xib in Resources */,
 				3A422CC718E137FD00828235 /* BNRReminderViewController.xib in Resources */,
 				3A422C9618E1337E00828235 /* InfoPlist.strings in Resources */,
 				3A422C9E18E1337E00828235 /* Images.xcassets in Resources */,
@@ -261,6 +270,7 @@
 			files = (
 				3A422CC218E1345000828235 /* BNRHypnosisViewController.m in Sources */,
 				3A422C9818E1337E00828235 /* main.m in Sources */,
+				3A422CCA18E144BA00828235 /* BNRQuizViewController.m in Sources */,
 				3A422C9C18E1337E00828235 /* BNRAppDelegate.m in Sources */,
 				3A422CC518E136DA00828235 /* BNRReminderViewController.m in Sources */,
 				3A422CBF18E1340B00828235 /* BNRHypnosisView.m in Sources */,
