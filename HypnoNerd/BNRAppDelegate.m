@@ -8,6 +8,7 @@
 
 #import "BNRAppDelegate.h"
 #import "BNRHypnosisViewController.h"
+#import "BNRReminderViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -17,8 +18,19 @@
     
     // Begin override point for customization after application launch.
     
+    // Get a Hypnosis view controller
     BNRHypnosisViewController *hvc = [[BNRHypnosisViewController alloc] init];
-    self.window.rootViewController = hvc;
+    
+    
+    // Get a pointer to an object that represents a pp bundle
+    NSBundle *appBundle = [NSBundle mainBundle];
+    
+    // Look in the bundle for the BNRReminderViewController.xib file
+    BNRReminderViewController *rvc = [[BNRReminderViewController alloc] initWithNibName:@"BNRReminderViewController"
+                                                                                 bundle:appBundle];
+    
+    // Set the root view controller to the reminder view controller
+    self.window.rootViewController = rvc;
     
     // End override pointo for customization after application launch.
     
